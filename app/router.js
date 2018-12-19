@@ -1,4 +1,6 @@
+/* eslint-disable-next-line import/no-unresolved */
 import EmberRouter from '@ember/routing/router';
+/* eslint-disable-next-line import/no-unresolved */
 import config from './config/environment';
 
 const Router = EmberRouter.extend({
@@ -6,7 +8,7 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
-});
+Router.map(() => ({
+}));
 
 export default Router;

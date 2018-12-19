@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = function(environment) {
-  let ENV = {
+module.exports = function (environment) {
+  const ENV = {
     modulePrefix: 'ember-map',
     environment,
     rootURL: '/',
@@ -35,7 +35,7 @@ module.exports = function(environment) {
     // Testem prefers this...
     ENV.locationType = 'none';
 
-    // keep test console output quieter
+    // Keep test console output quieter
     ENV.APP.LOG_ACTIVE_GENERATION = false;
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
@@ -44,8 +44,17 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    // Here you can enable a production-specific feature
   }
+
+  ENV['ember-google-maps'] = {
+    key: 'AIzaSyCQ00MARphs9a5UM5aT1rlpd0SqgkbIAUE',
+    language: 'en',
+    region: 'GB',
+    protocol: 'https',
+    version: '3.31',
+    libraries: ['geometry', 'places']
+  };
 
   return ENV;
 };
