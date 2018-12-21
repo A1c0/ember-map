@@ -1,5 +1,24 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{g-map lat="51.508530" lng="-0.076132" zoom=10}}
-{{!-- Feel free to remove this! --}}
+<div id="header">
+  <p id="titleHeader">TP Super Heroes</p>
+  <p id="dateHeader">31/12/2018</p>
+</div>
 
-{{outlet}}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6" id="mapBlock">
+      {{g-map lat="48.856614" lng="2.3522219" zoom=10}}
+    </div>
+    <div class="col-sm-6">
+      <div class="legends">
+        <p class="title">Legende pour Villains</p>
+      </div>
+      <div class="legends">
+        <p class="title">Legende pour Heroes</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <p id="authors">Alexandre Contassot - Alexia Couton - Victor Fauquembergue</p>
+</div>
